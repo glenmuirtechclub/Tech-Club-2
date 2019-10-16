@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+    background: rgba(0,0,0,1);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: dimgray;
+  border-radius: 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Hero for each page */
+.home{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(First.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+.about{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(about-hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+}
+.projects{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)),url(project-hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+}
+.contact{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(contact-hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navigation Styling */
+.nav-list{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-list li{
+    display:inline-flex;
+}
+.nav-list li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.nav-item a.active{
+    border: 3px solid #8be63c;
+}
+.nav-item a.about-active{
+    border: 3px solid darkcyan;
+}
+.nav-item a.projects-active{
+    border: 3px solid #340999;
+}
+.nav-item a.contact-active{
+    border: 3px solid #bf8f49;
+}
+.nav-list li a:hover{
+    background: #8be63c;
+}
+.nav-list li a.projects-nav:hover{
+    background: #340999;
+}
+.nav-list li a.contact-nav:hover{
+    background: #bf8f49;
+}
+.nav-list li a.about-nav:hover{
+    background: darkcyan;
+}
+
+/*set body font to monospace */
+body{
+    font-family: monospace;
+}
+
+/* header elements */
+.row{
+    max-width: 1200px;
+    margin: auto;
+}
+.hero{
+    position:absolute;
+    width: 97%;
+    height: 0px;
+    margin-left: 0;
+    margin-top: 0;
+}
+.hero h1{
+    color: white;
+    text-align: center;
+    font-size: 10vw;
+    margin-top: 275px;
+    
+}
+.hero #home-sub{
+    color:#8be63c;
+}
+.hero h3{
+    color: white;
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 0px;
+    
+    
+}
+.sub{
+    
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.about-sub{
+    background-color: darkcyan;
+}
+.projects-sub{
+    background-color: #340999;
+}
+.contact-sub{
+    background: #bf8f49;
+}
+.about-body{
+    background:#262626;
+    color: white;
+    padding: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6.5vh;
+    text-align: center;
+}
+#end{
+    background: darkcyan; 
+    font-size: 5vw;
+}
+
+/* first section of home*/
+.first{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Second.jpg);
+    background-position: center;
+    background-size: cover;
+    height:500px;
+    font-family: 'Roboto',sans-serif;
+}
+.first h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    padding-top: 140px;
+    padding-left: 2%;
+    font-size: 45px;
+    text-shadow: 2px 3px 9px #424242;
+    animation: textanimate 0.5s ease-in-out infinite forwards;
+    
+}
+.first p{ 
+    display: flex;
+    flex-flow: wrap;
+    color: #ff741c;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: left;
+    width: 600px;
+    margin-left: 2%;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px 9px #424242;
+}
+
+/* second section of home */
+.second{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(third.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    font-family: 'Roboto',sans-serif;
+}
+.second h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    float: right;
+    font-weight: 700;
+    color: white;
+    padding-top: 140px;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 45px;
+    text-shadow: 2px 3px 9px #424242;
+}
+.second p{ 
+    float: right;
+    text-align: right;
+    color: darkcyan;
+    font-weight: 600;
+    font-size: 19px;
+    width: 600px;
+    margin-left: 1200px;
+    padding-bottom: 5px;
+    padding-right: 2%;
+    text-shadow: 1px 1px 9px #424242;
+}
+
+/* buttons on home */
+#btn1{
+padding-left: 0.7%;    
+}
+#btn1 a
+{
+    display: flex;
+    flex-grow: 1;
+    margin: 8px;
+    padding: 5px;
+    margin-left: 12px;
+    width: 65px;
+    color: white;
+    border: 3px outset #ab5e2e;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px #ab5e2e;
+}
+#btn1 a:hover{
+    background: #ab5e2e;
+    border-style: inset;
+}
+#btn2{
+    float: right;
+    padding-right: 2%;
+}
+#btn2 a
+{
+    display: flex;
+    flex-grow: 1;
+    margin: 8px;
+    padding: 5px;
+    margin-left: 12px;
+    width: 100px;
+    color: white;
+    border: 3px outset darkcyan;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px darkcyan;
+}
+#btn2 a:hover{
+    background: darkcyan;
+    border-style: inset;
+}
+
+/* scroll animation */
+.scroll{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+.scroll span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+.scroll span:nth-child(1){
+    transform: translate(-15px,-15px);
+    animation-delay: -0.4s;
+}
+.scroll span:nth-child(2){
+    transform: translate(0,0);
+    animation-delay: -0.2s;
+}
+.scroll span:nth-child(3){
+    transform: translate(15px,15px);
+    animation-delay: 0s;
+}
+@keyframes animate{
+    0%{
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+    25%{
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    } 
+    50%, 100%{
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+    }
+}
+
+/* footer elements */
+footer{
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #060a12;
+    height: 38px;
+}
+.footer-items{
+    color: white;
+    display: inline-flex;
+    list-style: none;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 0px;
+    font-family: sans-serif;
+    float: right;
+}
+.footer-items li{
+    padding: 10px;
+}
+.footer-items li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* section with the projects done */
+.projects-gallery{
+   background: #000208;
+    height: 500px;
+}
+.projects-head{
+    font-family: 'Montserrat', 'sans-serif';
+    color: white;
+    padding: 10px;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+    padding: 10px;
+}
+#myImg:hover {opacity: 0.7;}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content {
+    margin: 0 auto;
+  width: 80%;
+  max-width:700px;
+}
+.modal-container {
+width: fit-content;
+    text-align: center;
+  display: block;
+  position: relative;
+  max-width: 80%; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+.text-block{
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 600px;
+    bottom: 20px;
+  right: 1px;
+}
+.modal-container:hover .text-block {
+  opacity: 1;
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+    max-width: 500px;
+    font-family: monospace;
+    font-size: 1.5vw;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  color: #ccc;
+  padding: 15px 0;
+  height: 300px;
+font-size: 20px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* contact card */
+/* sets bg color and height of card */ 
+.contact-card{
+    background-color: #bf8f49;
+    height: 500px;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+    background: #ffdba6;
+    display: inline-block;
+    width: 30vh;
+    padding: 50px;
+    margin-top: 85px;
+    
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+    border-radius: 8px;
+    font-family: 'Roboto';
+}
+/* margins for cards */
+.left{
+    margin-left: 20%;
+}
+.right{
+    margin-right:20%;
+}
+/*color of text */
+.card-text{
+    color: #333333;
+}
+.card-link{
+    text-decoration: none;
+    color: #806f5d;
+}
+.card-link:hover{
+    color:#a35d12;
+    text-decoration: none;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+/* Add some padding inside the card container */
+.container {
+    padding-left: 10px;
+  padding: 16px 2px;
+    
+}
+.text-block-head{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: white;
+}
+img{
+    border-radius: 9px;
+}
+@media (min-width: 769px) {
+  .right {
+    float: right;
+  }
+}
+
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(0) translateY(-20%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) translateY(0);
+        opacity: 1;
+        }
+}
+
+.anim{
+    animation: yourAnimation 1s forwards 0.5s ease-in-out;
+}
